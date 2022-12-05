@@ -46,17 +46,24 @@ void keyPress(unsigned char key, int x, int y) {
 	else if (key == 'b') {
 		y_angle += 45;
 	}
-	if (key == 'c') {
+	else if (key == 'c') {
+		z_angle += 45;
+	}
+	if (key == 'd') {
 		x_angle -= 45;
 	}
-	else if (key == 'd') {
+	else if (key == 'e') {
 		y_angle -= 45;
+	}
+	else if (key == 'f') {
+		z_angle -= 45;
 	}
 	else {
 		cout << "Invalid";
 	}
 	x_angle = x_angle % 360;
 	y_angle = y_angle % 360;
+	z_angle = z_angle % 360;
 	display();
 }
 
