@@ -32,6 +32,7 @@ void display() {
 	glPushMatrix();
 	glRotatef(x_angle, 1, 0, 0);
 	glRotatef(y_angle, 0, 1, 0);
+	glRotatef(z_angle, 0, 0, 1);
 	glColor3f(120.0f, 0.0f, 0.0f);
 	glutWireTeapot(1);
 	glPopMatrix();
