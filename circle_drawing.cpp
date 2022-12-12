@@ -23,7 +23,7 @@ void circle(double xc, double yc, double r) {
 	x = 0;
 	y = r;
 	cout << x << y;
-	plot(x+xc, y+yc);
+	plot(x + xc, y + yc);
 	while (y > x) {
 		if (p0 < 0) {
 			p0 += 2 * x;
@@ -33,14 +33,14 @@ void circle(double xc, double yc, double r) {
 			y--;
 		}
 		x++;
-		plot(x+xc, y+yc);
-		plot(x+xc, -y+yc);
-		plot(-x+xc, y+yc);
-		plot(-x+xc, -y+yc);
-		plot(y+yc, x+xc);
-		plot(y+yc, -x+xc);
-		plot(-y+yc, x+xc);
-		plot(-y+yc, -x+xc);
+		plot(x + xc, y + yc);
+		plot(x + xc, -y + yc);
+		plot(-x + xc, y + yc);
+		plot(-x + xc, -y + yc);
+		plot(y + xc, x + yc);
+		plot(y + xc, -x + yc);
+		plot(-y + xc, x + yc);
+		plot(-y + xc, -x + yc);
 	}
 }
 
